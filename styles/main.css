@@ -1,0 +1,93 @@
+.header {
+    color: #003082;
+    font-size: 1.5vw;
+    font-weight: 500;
+    background-color: rgb(163, 206, 255);
+}
+
+.time-container {
+    text-align: center;
+    color: white;
+    background-color: #003082;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.EindBestemming {
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.VertrekTijd {
+    height: 1px !important;
+    font-weight: bold;
+    font-size: 3vw;
+}
+ 
+.Spoor {
+    font-variant-numeric: ordinal;
+    position: static;
+    width: 50px;
+    max-width: 6vw;
+    padding: 0px;
+    margin: 1vw;
+    text-align: center;
+    font-weight: 500;
+    font-size: 3vw;
+    border: 2px solid #003082;
+    background-color: white;
+}
+
+.TreinSoort {
+    font-weight: 500;
+    font-size: 3vw;
+}
+
+.vertrektijden-container {
+    color: #003082;
+}
+
+.RouteTekst {
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+
+div .line:nth-child(even) {
+    background-color: rgb(195, 222, 255);
+}
+ 
+div .line:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+.logo {
+    width: 5vw;
+    margin-bottom: 1.5vw;
+    margin-right: 1vw;
+}
+
+.opmerking {
+    display: block;
+    color: rgb(189, 51, 51) !important;
+}
+
+.VertrekVertragingTekst {
+    transform:translateY(-1.5vw);
+    height: 1vh;
+    font-size: 2vw;
+    font-weight: 500;
+    padding-left: 1.5vw;
+    color: rgb(189, 51, 51);
+}
+
+.Comments {
+    color: rgb(189, 51, 51);
+}
+
+.verandering {
+    color: rgb(189, 51, 51) !important;
+}
+
+.TreinSoortTekstKlein {
+    font-size: 2vw;
+}

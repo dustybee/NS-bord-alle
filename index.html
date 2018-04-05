@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.js"></script>
+    <script src="https://use.fontawesome.com/527d1665ac.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>NS - vertrektijden</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div style="background-color: rgb(195, 222, 255);" class="row header">
+            <span class="col-md-2">Vertrek</span>
+            <span class="col-md-6">Naar / Opmerkingen</span>
+            <span class="col-md-1"> Spoor</span>
+            <span class="col align-self-center">Trein</span>
+            <div class="col-md-1 time-container">
+                <i class="fa fa-clock-o"> </i>
+                <span class="current-time">12:30</span>
+            </div>
+        </div>
+        <div class="vertrektijden-container">
+            <div class="row line">
+                <div class="col-md-2">
+                    <span id="row0-VertrekTijd" class="VertrekTijd"></span>
+                    <span id="row0-VertrekVertragingTekst" class="row VertrekVertragingTekst"></span>
+                </div>
+                <div class="col-md-6">
+                    <span id="row0-EindBestemming" class="EindBestemming"></span>
+                    <br>
+                    <span id="row0-RouteTekst" class="RouteTekst"></span>
+                </div>
+                <span id="row0-VertrekSpoor" class="col-md-1 Spoor"></span>
+                <div class="col align-self-center">
+                        <img id="logo0" class="logo">
+                    <span id="row0-TreinSoort" class="TreinSoort">&nbsp;</span>
+                </div>
+            </div>
+            <div class="row line">
+                    <div class="col-md-2">
+                        <span id="row1-VertrekTijd" class="VertrekTijd"></span>
+                        <span id="row1-VertrekVertragingTekst" class="row VertrekVertragingTekst"></span>
+                    </div>
+                <div class="col-md-6">
+                    <span id="row1-EindBestemming" class="EindBestemming"></span>
+                    <br>
+                    <span id="row1-RouteTekst" class="RouteTekst"></span>
+                </div>
+                <span id="row1-VertrekSpoor" class="col-md-1 Spoor"></span>
+                <div class="col align-self-center">
+                        <img id="logo1" class="logo">
+                    <span id="row1-TreinSoort" class="TreinSoort">&nbsp;</span>
+                </div>
+            </div>
+            <div class="row line">
+                <div class="col-md-2">
+                    <span id="row2-VertrekTijd" class="VertrekTijd"></span>
+                    <span id="row2-VertrekVertragingTekst" class="row VertrekVertragingTekst"></span>
+                </div>
+                <div class="col-md-6">
+                    <span id="row2-EindBestemming" class="EindBestemming"></span>
+                    <br>
+                    <span id="row2-RouteTekst" class="RouteTekst"></span>
+                </div>
+                <span id="row2-VertrekSpoor" class="col-md-1 Spoor"></span>
+                <div class="col align-self-center">
+                        <img id="logo2" class="logo">
+                    <span id="row2-TreinSoort" class="text-nowrap TreinSoort">&nbsp;</span>
+                </div>
+            </div>
+            <div class="row line">
+                    <div class="col-md-2">
+                            <span id="row3-VertrekTijd" class="VertrekTijd"></span>
+                            <span id="row3-VertrekVertragingTekst" class="row VertrekVertragingTekst"></span>
+                        </div>
+                <div class="col-md-6">
+                    <span id="row3-EindBestemming" class="EindBestemming"></span>
+                    <br>
+                    <span id="row3-RouteTekst" class="RouteTekst"></span>
+                </div>
+                <span id="row3-VertrekSpoor" class="col-md-1 Spoor"></span>
+                <div class="col align-self-center">
+                        <img id="logo3" class="logo">
+                    <span id="row3-TreinSoort" class="text-nowrap TreinSoort">&nbsp;</span>
+                </div>
+            </div>
+            <div class="row line">
+                    <div class="col-md-2">
+                        <span id="row4-VertrekTijd" class="VertrekTijd"></span>
+                        <span id="row4-VertrekVertragingTekst" class="row VertrekVertragingTekst"></span>
+                    </div>
+                <div class="col-md-6">
+                    <span id="row4-EindBestemming" class="EindBestemming"></span>
+                    <br>
+                    <span id="row4-RouteTekst" class="RouteTekst"></span>
+                </div>
+                <span id="row4-VertrekSpoor" class="col-md-1 Spoor"></span>
+                <div class="col align-self-center">
+                        <img id="logo4" class="logo">
+                    <span id="row4-TreinSoort" class="text-nowrap TreinSoort">&nbsp;</span>
+                </div>
+            </div>
+            <div class="row line">
+                    <div class="col-md-2">
+                        <span id="row5-VertrekTijd" class="VertrekTijd"></span>
+                        <span id="row5-VertrekVertragingTekst" class="row VertrekVertragingTekst"></span>
+                    </div>
+                <div class="col-md-6">
+                    <span id="row5-EindBestemming" class="EindBestemming"></span>
+                    <br>
+                    <span id="row5-RouteTekst" class="RouteTekst"></span>
+                </div>
+                <span id="row5-VertrekSpoor" class="col-md-1 Spoor"></span>
+                <div class="col align-self-center">
+                        <img id="logo5" class="logo">
+                    <span id="row5-TreinSoort" class="text-nowrap TreinSoort">&nbsp;</span>
+                </div>
+            </div>
+            <div class="row line">
+                    <div class="col-md-2">
+                        <span id="row6-VertrekTijd" class="VertrekTijd"></span>
+                        <span id="row6-VertrekVertragingTekst" class="row VertrekVertragingTekst"></span>
+                    </div>
+                <div class="col-md-6">
+                    <span id="row6-EindBestemming" class="EindBestemming"></span>
+                    <br>
+                    <span id="row6-RouteTekst" class="RouteTekst"></span>
+                </div>
+                <span id="row6-VertrekSpoor" class="col-md-1 Spoor"></span>
+                <div class="col align-self-center">
+                        <img id="logo6" class="logo">
+                    <span id="row6-TreinSoort" class="text-nowrap TreinSoort">&nbsp;</span>
+                </div>
+            </div>
+            <div class="row line">
+                    <div class="col-md-2">
+                        <span id="row7-VertrekTijd" class="VertrekTijd"></span>
+                        <span id="row7-VertrekVertragingTekst" class="row VertrekVertragingTekst"></span>
+                    </div>
+                <div class="col-md-6">
+                    <span id="row7-EindBestemming" class="EindBestemming"></span>
+                    <br>
+                    <span id="row7-RouteTekst" class="RouteTekst"></span>
+                </div>
+                <span id="row7-VertrekSpoor" class="col-md-1 Spoor"></span>
+                <div class="col align-self-center">
+                        <img id="logo7" class="logo">
+                    <span id="row7-TreinSoort" class="text-nowrap TreinSoort">&nbsp;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
