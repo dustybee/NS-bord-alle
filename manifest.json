@@ -1,0 +1,24 @@
+{
+  "short_name": "NS-all",
+  "name": "NS bord all vertrek",
+  "icons": [
+    {
+      "src": "/images/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#000066",
+  "display": "fullscreen",
+  "scope": "/NS-bord-alle/",
+  "theme_color": "#000066",
+  "orientation": "landscape"
+  "kiosk_enabled": true,
+  "kiosk_only": true,
+}
