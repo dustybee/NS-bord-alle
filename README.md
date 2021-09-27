@@ -2,4 +2,4 @@
 Recreation of the train timetable signs
 
 # Demo 
-https://idustybee.net/ns-bord-alle
+https://snvs.net/projects/ns-bord-alle/
